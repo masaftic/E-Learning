@@ -56,7 +56,7 @@ h2 {
 header {
   background-color: var(--clr-light-blue);
   /* From https://css.glass */
-  background: rgba(76, 185, 231, 0.59);
+  background: rgba(76, 185, 231, 0.58);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   /* backdrop-filter: blur(8.9px); */
   -ms-backdrop-filter: blur(8.9px);
