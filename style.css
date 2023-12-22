@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300;6..12,400;6..12,600;6..12,700&display=swap');
+
+
+:root {
+  font-size: 16px;
+  --clr-beige: rgb(255, 236, 214);
+  --clr-light-blue: rgb(76, 185, 231);
+  --clr-blue: rgb(53, 89, 224);
+  --clr-dark-blue: rgb(15, 33, 103);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Nunito Sans', sans-serif;
+  background: url('images/wallpaper.jpg') no-repeat;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1.3;
+  width: 50%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+p {
+  font-weight: 300;
+}
+
+img {
+  max-width: 100%;
+}
+
+h2 {
+  font-size: 2.69rem;
+  font-weight: 700;
+
+}
+
+/* navbar */
+
+
+header {
+  background-color: var(--clr-light-blue);
+  /* From https://css.glass */
+  background: rgba(76, 185, 231, 0.59);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  /* backdrop-filter: blur(8.9px); */
+  -ms-backdrop-filter: blur(8.9px);
+  border: 1px solid rgba(58, 169, 171, 0.15);
+}
+
+.navbar {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar ul {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+
+
+/* intro */
+
+.intro-content {
+  padding: 8rem 0;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.intro-content a:hover {
+  color: var(--clr-dark-blue);
+}
+
+.intro-content p {
+  font-weight: 400;
+  font-size: 1.125rem;
+  width: 70%;
+}
+
+.intro-content .links {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+
+/* learn */
+
+.learn {
+  padding: 5rem;
+  background-color: white;
+}
+
+.learn-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.learn-heading h2 {
+  white-space: nowrap;
+}
+
+.learn-heading-title {
+  border-right: 1px solid var(--clr-dark-blue);
+  padding-right: 3rem;
+}
+
+.learn-heading p {
+  padding: 0 3rem;
+}
+
+.learn-heading a {
+  white-space: nowrap;
+}
+
+
+.learn-courses {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.course-box {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  /* min-height: 20rem; */
+}
+
+.course-box-data h2 {
+  font-size: 2rem;
+}
+
+.course-box-data {
+  height: 69%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 1rem 1rem 4rem 1rem;
+}
+
+
+
+
+/* specs */
+
+.specs {
+  color: white;
+  padding-top: 2rem;
+  background-color: var(--clr-blue);
+}
+
+.specs-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+
+.specs-content .col h3 {
+  font-size: 1.75rem;
+  margin: 1rem 0;
+}
+
+.specs-content .col:last-of-type {
+  padding: 2rem;
+  color: black;
+  background-color: white;
+}
+
+.specs-content .col:last-of-type a {
+  font-weight: 700;
+  color: black;
+}
+
+.specs-content .col:last-of-type a:hover {
+  color: var(--clr-light-blue);
+}
+
+/* utilities */
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.btn {
+  text-align: center;
+  background-color: var(--clr-dark-blue);
+  color: white;
+  padding: 0.5rem 1.65rem;
+  border-radius: 60rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+  transition-delay: 0s;
+  transition: background-color 0.5s;
+  display: inline-block;
+}
+
+.btn-block {
+  display: block;
+}
+
+.btn:hover {
+  background-color: var(--clr-light-blue);
+}
