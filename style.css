@@ -34,6 +34,8 @@ ul {
 a {
   color: white;
   text-decoration: none;
+  padding: 1rem 0;
+  transition: color 0.5s;
 }
 
 p {
@@ -56,7 +58,7 @@ h2 {
 header {
   background-color: var(--clr-light-blue);
   /* From https://css.glass */
-  background: rgba(76, 185, 231, 0.58);
+  background: rgba(76, 185, 231, 0.8);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   /* backdrop-filter: blur(8.9px); */
   -ms-backdrop-filter: blur(8.9px);
@@ -73,9 +75,16 @@ header {
 .navbar ul {
   display: flex;
   align-items: center;
-  gap: 1.5rem;
+  gap: 0.5rem;
 }
 
+.navbar ul li a:not(.btn) {
+  padding: 0 1rem;
+}
+
+.navbar ul li a:not(.btn):hover {
+  color: var(--clr-dark-blue);
+}
 
 
 /* intro */
@@ -209,11 +218,11 @@ header {
 
 .btn {
   text-align: center;
-  background-color: var(--clr-dark-blue);
-  color: white;
   padding: 0.5rem 1.65rem;
   border-radius: 60rem;
   text-transform: uppercase;
+  background-color: var(--clr-dark-blue);
+  color: white;
   font-weight: 700;
   transition-duration: 0.2s;
   transition-timing-function: linear;
@@ -221,6 +230,8 @@ header {
   transition: background-color 0.5s;
   display: inline-block;
 }
+
+
 
 .btn-block {
   display: block;
