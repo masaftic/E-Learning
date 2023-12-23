@@ -36,6 +36,7 @@ a {
   color: white;
   text-decoration: none;
   padding: 1rem 0;
+  font-size: 0.9rem;
   transition: color 0.5s;
 }
 
@@ -112,6 +113,7 @@ header {
   display: flex;
   gap: 2rem;
   align-items: center;
+  font-weight: 700;
 }
 
 
@@ -309,6 +311,10 @@ header {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
+.join-us button {
+  font-weight: 700;
+}
+
 /* --- */
 
 .footer-navbar {
@@ -323,6 +329,7 @@ header {
   padding: 0.125rem 0;
   display: inline-block;
   color: black;
+  font-size: 1rem;
   /* margin: 0.5rem 0; */
 }
 
