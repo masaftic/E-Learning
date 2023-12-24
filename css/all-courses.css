@@ -58,7 +58,7 @@ h2 {
 
 
 header {
-  /* background-color: var(--clr-blue); */
+  background-color: var(--clr-light-blue);
   /* From https://css.glass */
   background: rgba(76, 185, 231, 0.8);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -67,15 +67,15 @@ header {
   border: 1px solid rgba(58, 169, 171, 0.15);
 }
 
+.navbar img {
+  height: 3rem;
+}
+
 .navbar {
   padding: 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.navbar img {
-  height: 3rem;
 }
 
 .navbar ul {
@@ -121,151 +121,71 @@ header {
 }
 
 
-/* pricing */
+/* learn */
 
-.pricing {
+.learn {
   padding: 5rem;
   background-color: var(--clr-light-gray);
 }
 
-.pricing-heading {
+.learn-heading {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 10rem;
+  margin-bottom: 3rem;
 }
 
-.pricing-heading h2 {
+.learn-heading h2 {
   white-space: nowrap;
 }
 
-.pricing-heading-title {
+.learn-heading-title {
   border-right: 1px solid var(--clr-dark-blue);
   padding-right: 3rem;
 }
 
-.pricing-heading p {
+.learn-heading p {
   padding: 0 3rem;
 }
 
-.pricing-heading a {
+.learn-heading a {
   white-space: nowrap;
 }
 
 
-.pricing-courses {
-  display: flex;
-  justify-content: space-between;
+.learn-courses {
+  display: grid;
   gap: 2rem;
+  grid-template-columns: repeat(3, 1fr);
 }
 
-
-.prices {
-  display: flex;
-  gap: 2rem;
-}
-
-.price-card {
-  flex: 1;
+.course-box {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  padding: 3rem;
-  text-align: center;
-  border-radius: 0.5rem;
+  /* min-height: 20rem; */
 }
 
-.price-card:nth-child(2) {
-  color: white;
-  background-color: var(--clr-blue);
+.course-box-data h2 {
+  font-size: 2rem;
 }
 
-.price-card:nth-child(2) a {
-  background-color: white;
-  color: black;
-}
-
-.price-card:nth-child(2) a:hover {
-  background-color: var(--clr-light-blue);
-}
-
-.price-card .price {
-  text-align: center;
-  margin: 1rem 0;
-}
-
-.price-card .price span {
-  font-size: 3rem;
-}
-
-.price-card ul {
-  margin: 1rem 0;
-  text-align: left;
-}
-
-.price-card ul li {
-  padding: 0.35rem 0;
-  /* font-size: 0.85rem; */
-}
-
-.price-card a {
-  margin-top: 1rem;
-}
-
-
-/* faq */
-
-
-.faq {
-  background-color: var(--clr-light-gray);
-  padding: 5rem 0;
-}
-
-.faq-content {
+.course-box-data {
+  /* height: 69%; */
   display: flex;
-  gap: 2rem;
-}
-
-.faq-heading {
-  flex: 1;
-}
-
-.faq-body {
-  flex: 3;
-}
-
-.faq-group {
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-  margin: 2rem 0;
+  flex-direction: column;
+  justify-content: space-around;
   padding: 1rem;
+}
+
+.course-box-data p {
+  margin: 1rem 0;
+}
+
+.course-box-data a {
+  margin-top: 2rem;
   border-radius: 0.3rem;
+  text-transform: capitalize;
 }
 
-.faq-group .faq-question {
-  position: relative;
-  transition: color 0.25s;
-}
-
-.faq-group .faq-question i {
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-
-.faq-group .faq-question:hover {
-  cursor: pointer;
-  color: var(--clr-light-blue);
-}
-
-.faq-group .faq-answer {
-  overflow: hidden;
-  max-height: 0;
-  transition: 0.5s;
-  overflow-y: hidden;
-}
-
-.faq-group .faq-answer.active {
-  max-height: 100px;
-  margin-top: 1rem;
-}
 
 
 /* footer */
@@ -374,13 +294,7 @@ header {
   display: inline-block;
 }
 
-.text-center {
-  text-align: center;
-}
 
-.fade {
-  opacity: 0.2;
-}
 
 .btn-block {
   display: block;
