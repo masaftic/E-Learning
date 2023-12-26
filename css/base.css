@@ -292,8 +292,11 @@ header {
 .footer-navbar .footer-content {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  justify-items: center;
+  align-items: center;
   gap: 1rem;
 }
+
 
 .footer-navbar hr {
   margin: 2rem 0;
