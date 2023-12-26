@@ -34,8 +34,33 @@
 .learn-courses {
   display: grid;
   gap: 2rem;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
+
+
+@media (max-width: 1000px) {
+  .learn-heading-body {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* padding: 20rem; */
+  }
+}
+
+@media (max-width: 850px) {
+  .learn-heading {
+    flex-direction: column;
+  }
+
+  .learn-heading-title {
+    border-right: 0;
+    border-bottom: 1px solid var(--clr-dark-blue);
+    padding-right: 3rem;
+    padding: 1rem 0;
+    margin: 1rem 0;
+  }
+}
+
 
 .course-box {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;

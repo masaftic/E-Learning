@@ -85,11 +85,28 @@ header {
 }
 
 .navbar ul li a:not(.btn) {
-  padding: 0 1rem;
+  padding: 0 0.5rem;
+  font-size: 1rem;
 }
 
 .navbar ul li a:not(.btn):hover {
   color: var(--clr-dark-blue);
+}
+
+@media (max-width: 850px) {
+  .navbar {
+    flex-direction: column;
+    font-size: 1rem;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+  }
+
+  .navbar ul li a {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+  }
 }
 
 
@@ -118,6 +135,31 @@ header {
   gap: 2rem;
   align-items: center;
   font-weight: 700;
+}
+
+@media (max-width: 850px) {
+  .intro-content {
+    text-align: center;
+  }
+
+  h1 {
+    width: 100%;
+  }
+
+  .intro-content p {
+    font-weight: 400;
+    font-size: 1.125rem;
+    width: 100%;
+  }
+
+  .intro-content .links {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+  }
+
 }
 
 
@@ -158,7 +200,7 @@ header {
   gap: 1rem
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1040px) {
   .learn-heading-body {
     flex-direction: column;
     align-items: center;
@@ -170,6 +212,7 @@ header {
 @media (max-width: 850px) {
   .learn-heading {
     flex-direction: column;
+    text-align: center;
   }
 
   .learn-heading-title {
@@ -178,6 +221,7 @@ header {
     padding-right: 3rem;
     padding: 1rem 0;
     margin: 1rem 0;
+    text-align: center;
   }
 }
 
@@ -198,7 +242,7 @@ header {
 
 .join-us input {
   height: 2.25rem;
-  margin: 0 0.5rem;
+  margin: 1rem 0.5rem;
   padding: 0 0.5rem;
   border: none;
   min-width: 15rem;
@@ -246,8 +290,9 @@ header {
 }
 
 .footer-navbar .footer-content {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
 }
 
 .footer-navbar hr {

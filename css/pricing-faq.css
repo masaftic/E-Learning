@@ -2,45 +2,13 @@
 
 /* pricing */
 
-.pricing {
-  padding: 5rem;
-  background-color: var(--clr-light-gray);
-}
-
-.pricing-heading {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 10rem;
-}
-
-.pricing-heading h2 {
-  white-space: nowrap;
-}
-
-.pricing-heading-title {
-  border-right: 1px solid var(--clr-dark-blue);
-  padding-right: 3rem;
-}
-
-.pricing-heading p {
-  padding: 0 3rem;
-}
-
-.pricing-heading a {
-  white-space: nowrap;
-}
 
 
-.pricing-courses {
-  display: flex;
-  justify-content: space-between;
-  gap: 2rem;
-}
 
 
 .prices {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 2rem;
 }
 
@@ -88,6 +56,11 @@
 .price-card a {
   margin-top: 1rem;
 }
+
+.fade {
+  opacity: 0.2;
+}
+
 
 
 /* faq */

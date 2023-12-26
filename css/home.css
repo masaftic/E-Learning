@@ -166,3 +166,10 @@
   /* align-items: center; */
 }
 
+@media (max-width: 850px) {
+  .features-content {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
