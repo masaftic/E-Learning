@@ -1,34 +1,6 @@
 
 /* learn */
 
-.learn {
-  padding: 5rem;
-  background-color: var(--clr-light-gray);
-}
-
-.learn-heading {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 3rem;
-}
-
-.learn-heading h2 {
-  white-space: nowrap;
-}
-
-.learn-heading-title {
-  border-right: 1px solid var(--clr-dark-blue);
-  padding-right: 3rem;
-}
-
-.learn-heading p {
-  padding: 0 3rem;
-}
-
-.learn-heading a {
-  white-space: nowrap;
-}
 
 
 .learn-courses {
