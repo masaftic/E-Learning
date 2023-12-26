@@ -76,6 +76,13 @@
   gap: 2rem;
 }
 
+@media (max-width: 850px) {
+  .faq-content {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
 .faq-heading {
   flex: 1;
 }
