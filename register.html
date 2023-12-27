@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <title>E-Learning</title>
+      <link rel="stylesheet" href="css/register.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Sans&family=Inter:wght@400;500&family=Lato&family=Libre+Franklin&family=Nunito+Sans:opsz,wght@6..12,500&display=swap" rel="stylesheet">
+   </head>
+   <body>
+      <div class="background">
+         <div class="background-child1">
+            <p class="text1">Sign up</p>
+            <form method="post" id="register">
+                <input 
+                  type="text" 
+                  name="name" 
+                  placeholder="Name" 
+                  class="name" 
+                  title="Enter your name"
+                  required
+               >
+               <input 
+                  type="email" 
+                  name="email" 
+                  placeholder="Email" 
+                  class="email" 
+                  title="Enter your email"
+                  required
+                  pattern="^.+@[^\.].*\.[a-z]{2,}$" 
+               >
+               <input 
+                  type="password" 
+                  name="password" 
+                  placeholder="Password" 
+                  class="password" 
+                  title="Enter your password" 
+                  required
+                  pattern="(?=^.{6,255}$)((?=.*\d)(?=.*[A-Z])(?=.*[a-z])|(?=.*\d)(?=.*[^A-Za-z0-9])(?=.*[a-z])|(?=.*[^A-Za-z0-9])(?=.*[A-Z])(?=.*[a-z])|(?=.*\d)(?=.*[A-Z])(?=.*[^A-Za-z0-9]))^.*" 
+               >
+            </form>
+            <button type="submit" form="register" formaction="login.html" class="register">Sign up</button>
+         </div>
+         <div class="background-child2">
+            <p class="text3">Welcome Back!</p>
+            <p class="text4">Already have an account ?</p>
+            <form>
+               <button type="submit" formaction="login.html" class="signin">Sign in</button>
+            </form>
+         </div>
+      </div>
+   </body>
+</html>

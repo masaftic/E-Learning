@@ -1,0 +1,265 @@
+
+body {
+    background-color: rgb(247, 249, 250);;
+}
+
+/* learn */
+
+
+.learn-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+  }
+  
+  
+  
+  
+  .learn-heading-body {
+    display: flex;
+    align-items: center;
+    gap: 1rem
+  }
+  
+  @media (max-width: 1000px) {
+    .learn-heading-body {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      /* padding: 20rem; */
+    }
+  }
+  
+  @media (max-width: 850px) {
+    .learn-heading {
+      flex-direction: column;
+    }
+  
+    .learn-heading-title {
+      border-right: 0;
+      border-bottom: 1px solid var(--clr-dark-blue);
+      padding-right: 3rem;
+      padding: 1rem 0;
+      margin: 1rem 0;
+    }
+  }
+  
+  
+  
+  .learn-courses {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    overflow: hidden;
+  }
+  
+  .learn-courses img {
+    transition-duration: 0.3s;
+  }
+  
+  .learn-courses img:hover {
+    transform: scale(1.1);
+  }
+  
+  .course-box {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    overflow: hidden;
+  }
+  
+  .course-box-data h2 {
+    font-size: 2rem;
+  }
+  
+  .course-box-data {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+  }
+  
+  .course-box-data p {
+    margin: 1rem 0;
+  }
+  
+  .course-box-data a {
+    border-radius: 0.3rem;
+    text-transform: capitalize;
+    margin-top: auto;
+  }
+  
+  
+  
+  
+  /* specs */
+  
+  .specs {
+    color: white;
+    padding-top: 2rem;
+    background-color: var(--clr-blue);
+  }
+  
+  .specs-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    /* display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; */
+    gap: 2rem;
+  }
+  
+  
+  .specs-content .col h3 {
+    font-size: 1.75rem;
+    margin: 1rem 0;
+  }
+  
+  .specs-content .col:last-of-type {
+    padding: 2rem;
+    color: black;
+    background-color: white;
+  }
+  
+  .specs-content .col:last-of-type a {
+    font-weight: 700;
+    color: black;
+  }
+  
+  .specs-content .col:last-of-type p {
+    font-size: 1.55rem;
+    font-weight: 700;
+    margin: 1rem 0;
+  }
+  
+  .specs-content .col:last-of-type a:hover {
+    color: var(--clr-light-blue);
+  }
+  
+  
+  
+  /* feature */
+  
+  .features {
+    padding: 4rem 0;
+    background-color: var(--clr-light-gray);
+  }
+  
+  .features-content {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  
+  .features-content .feature {
+    margin: 1.5rem 0;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    /* align-items: center; */
+  }
+  
+  @media (max-width: 850px) {
+    .features-content {
+      flex-direction: column;
+      gap: 2rem;
+    }
+  }
+  
+.edite1 {
+    min-width: 350px !important;
+    max-width: 600px !important;
+    white-space: wrap !important;
+}
+
+.who-we-are {
+    background-color: rgb(247, 249, 250);
+    display: flex;
+    flex-direction: row;
+    padding: 0 90px;
+    padding-bottom: 100px;
+}
+
+.who-we-are .container {
+    margin-top: 90px;
+    margin-left: 50px;
+    max-width: 400px;
+}
+
+.squares {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin: 20px 0;
+    margin-left: 10px;
+}
+
+.squares div {
+    background-color: rgb(15, 33, 103);
+    width: 13px;
+    height: 9px;
+    transform: skew(-52deg);
+}
+
+.our-vision {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(247, 249, 250);
+    column-gap: 150px;
+    margin-bottom: 90px;
+}
+
+.container1 p {
+    font-weight: bold;
+}
+
+.container1 {
+    width: max(1100px, 130%);
+    position: relative;
+}
+
+.container1::after {
+    content: "";
+    width: 1px;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    right: -50px;
+    top: 0;
+}
+
+.our-vision .container p {
+    font-weight: bold;
+}
+
+.our-vision .container2 h3 {
+    font-size: 26px;
+    line-height: 30px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.container3 {
+    display: flex;
+    flex-direction: row;
+    margin-top: 25px;
+    column-gap: 25px;
+}
+
+.specs-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 220px;
+}
+
+.col p {
+    font-weight: 100 !important;
+}
+
+.specs-content .col:last-of-type {
+    color: white;
+    padding: inherit;
+    background-color: inherit;
+}

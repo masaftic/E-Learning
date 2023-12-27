@@ -38,7 +38,7 @@ a {
   text-decoration: none;
   padding: 1rem 0;
   font-size: 0.9rem;
-  transition: color 0.5s;
+  transition: all 0.5s;
 }
 
 p {
@@ -59,10 +59,8 @@ h2 {
 
 header {
   background-color: var(--clr-light-blue);
-  /* From https://css.glass */
   background: rgba(76, 185, 231, 0.8);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  /* backdrop-filter: blur(8.9px); */
   -ms-backdrop-filter: blur(8.9px);
   border: 1px solid rgba(58, 169, 171, 0.15);
 }
@@ -252,10 +250,14 @@ header {
   border: none;
   min-width: 15rem;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  font-size: 16px;
+  text-indent: 8px;
+  border-radius: 2px;
 }
 
 .join-us button {
   font-weight: 700;
+  border: none;
 }
 
 /* --- */
@@ -277,7 +279,7 @@ header {
 }
 
 .footer-navbar a:hover {
-  color: var(--clr-light-blue);
+  opacity: 0.3;
 }
 
 
@@ -342,7 +344,9 @@ header {
   display: inline-block;
 }
 
-
+form input, form textarea {
+  font-size: 16px;
+}
 
 .btn-block {
   display: block;

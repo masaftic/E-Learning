@@ -49,12 +49,22 @@
   display: grid;
   gap: 2rem;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  overflow: hidden;
+}
+
+.learn-courses img {
+  transition-duration: 0.3s;
+}
+
+.learn-courses img:hover {
+  transform: scale(1.1);
 }
 
 .course-box {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   display: grid;
   grid-template-rows: auto 1fr auto;
+  overflow: hidden;
 }
 
 .course-box-data h2 {

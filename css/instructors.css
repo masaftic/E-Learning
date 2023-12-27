@@ -10,6 +10,25 @@
 
 .Instructor-box img {}
 
+img {
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.pointer {
+    width: fit-content;
+    margin-top: 20px;
+    padding: 0;
+}
+
+.Instructor-box {
+    overflow: hidden;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
 .Instructor-box-data h2 {
     font-size: 1.7rem;
 }
