@@ -1,0 +1,70 @@
+.overview {
+  padding: 5rem 0;
+}
+
+.overview .container {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.course-content {
+  padding: 4rem;
+}
+
+.course-content h2 {
+  font-size: 2.25rem;
+  margin: 1rem 0;
+}
+
+.course-content h3 {
+  font-size: 1.45rem;
+  margin: 1rem 0;
+}
+
+.course-content-title {
+  border-top: 1px solid gray;
+  padding: 1rem 0;
+}
+
+.chapter {
+  position: relative;
+}
+
+.chapter h3 {
+  font-size: 1.125rem;
+}
+
+.chapter .lesson {
+  margin: 0.2rem 1rem;
+}
+
+.lesson a {
+  color: black;
+  display: inline-block;
+  font-size: 1rem;
+  margin: 0.25rem;
+  padding: 0;
+  max-width: 600px;
+  text-overflow: ellipsis;
+}
+
+.lesson a:hover {
+  color: rgb(76, 185, 231);
+}
+
+
+.course-content a.btn {
+  position: absolute;
+  right: 1rem;
+  /* top: 0; */
+  bottom: 0.69rem;
+}
+
+@media (max-width: 800px) {
+  .course-content a.btn {
+    position: unset;
+    margin-top: 2rem;
+    /* align-items: center; */
+  }
+}

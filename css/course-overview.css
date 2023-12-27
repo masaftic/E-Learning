@@ -28,6 +28,9 @@
   padding: 1rem 0;
 }
 
+.chapter {
+  position: relative;
+}
 
 .chapter h3 {
   font-size: 1.125rem;
@@ -47,4 +50,11 @@
 
 .lesson a:hover {
   color: rgb(76, 185, 231);
+}
+
+
+a.btn {
+  position: absolute;
+  margin-top: 1rem;
+  right: 3rem;
 }
