@@ -1,0 +1,50 @@
+.Instructors {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.Instructor-box {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.Instructor-box img {}
+
+img {
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.pointer {
+    width: fit-content;
+    margin-top: 20px;
+    padding: 0;
+}
+
+.Instructor-box {
+    overflow: hidden;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+.Instructor-box-data h2 {
+    font-size: 1.7rem;
+}
+
+.Instructor-box-data h3 {
+    font-size: 1rem;
+}
+
+.Instructor-box-data a {
+    color: orange;
+}
+
+
+.Instructor-box-data {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1rem;
+}

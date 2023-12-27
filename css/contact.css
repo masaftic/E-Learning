@@ -1,0 +1,146 @@
+.contact-us {
+    background-color: #ecf0f2;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.contact-us .container {
+    display: flex;
+    flex-direction: row;
+    gap: 190px;
+}
+
+.container1 {
+    width: 1100px;
+}
+.squares {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin: 20px 0;
+    margin-left: 5px;
+}
+
+.squares div {
+    background-color: rgb(15, 33, 103);
+    width: 13px;
+    height: 9px;
+    transform: skew(-52deg);
+}
+
+.contact {
+    margin-top: 40px;
+}
+
+.location {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    align-items: center;
+    width: fit-content;
+    height: 10px;
+}
+
+.message {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    width: fit-content;
+    height: 10px;
+    margin-top: 20px;
+}
+
+.phone {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+.rows {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.rows a {
+    padding: 0;
+    transition: all 0.5s;
+}
+
+.rows a:hover {
+    opacity: 0.3;
+}
+
+.keep {
+    position: relative;
+}
+
+.keep::after {
+    content: "";
+    width: 1px;
+    height: 100%;
+    position: absolute;
+    background-color: black;
+    right: -10px;
+    top: 0;
+}
+
+.container2 {
+    background-color: white;
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.text {
+    margin-top: 15px;
+    margin-bottom: 40px;
+}
+
+.container2 input, .container2 textarea {
+    padding: 10px;
+}
+
+.container2 form {
+    margin-top: -10px;
+}
+
+.container2 form input, .container2 textarea {
+    display: block;
+    margin-top: 20px;
+    width: 100%;
+    background-color: #FAFAFA;
+    border: 1px #dddddd solid;
+    border-radius: 2px;
+}
+
+form input::placeholder, form textarea::placeholder {
+    font-size: 16px;
+}
+
+form textarea {
+    display: block;
+    margin-top: 20px;
+    width: 100%;
+}
+
+form .send {
+    margin-top: 30px;
+    background-color: rgb(15, 33, 103);
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    width: 150px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+form .send:hover {
+    background-color: rgb(76, 185, 231);;
+}

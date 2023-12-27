@@ -1,0 +1,122 @@
+* {
+    font-family: 'Hedvig Letters Sans', sans-serif;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Libre Franklin', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
+}
+body {
+    background-image: url(../images/laptop-3087585_1920.jpg);
+}
+:root {
+    --best-blue: #03a9f4;
+    --best-red: #e91e63;
+}
+.text1 {
+    color: #3aa9ab;
+    font-size: 60px;
+    font-weight: 1000;
+    margin-left: 1%;
+}
+input {
+    display: block;
+    padding: 15px;
+    width: 50%;
+    margin: auto;
+    border: none;
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 7px;
+}
+input:focus {
+    outline: none;
+    border: 2px solid #3aa9ab;
+}
+.name {
+    margin-top: 60px;
+}
+.background {
+    width: 1000px;
+    height: 600px;
+    position: relative;
+    margin: auto;
+    margin-top: 75px;
+}
+.background-child1 {
+    width: 65%;
+    height: inherit;
+    text-align: center;
+    background-color: white;
+    position: absolute;
+    right: 0;
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+    background: rgba(255, 255, 255, 0.75);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8.9px);
+    -webkit-backdrop-filter: blur(8.9px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+.background-child2 {
+    width: 35%;
+    height: 100%;
+    text-align: center;
+    background-color: #3aa9ab;
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+    position: absolute;
+    left: 0px;
+    background: rgba(58, 169, 171, 0.75);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8.9px);
+    -webkit-backdrop-filter: blur(8.9px);
+    border: 1px solid rgba(58, 169, 171, 0.15);
+}
+.text3 {
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 200px;
+}
+.text4 {
+    font-size: 14px;
+    color: white;
+}
+.register {
+    color: white;
+    background-color: #3aa9ab;
+    width: 150px;
+    padding: 10px;
+    border-radius: 30px;
+    margin: auto;
+    margin-top: 100px;
+    position: relative;
+    bottom: 25px;
+    border: none;
+    font-size: 16px;
+    border: solid 2px #3aa9ab;
+    transition-duration: 0.5s;
+}
+.signin {
+    color: white;
+    width: 150px;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 30px;
+    margin: auto;
+    margin-top: 5px;
+    border: none;
+    background-color: transparent;
+    border: solid 2px white;
+    transition-duration: 0.5s;
+}
+.register:hover {
+    background-color: var(--best-red);
+    border: solid 2px var(--best-red);
+    cursor: pointer;
+}
+.signin:hover {
+    background-color: var(--best-red);
+    border: solid 2px var(--best-red);
+    cursor: pointer;
+}
