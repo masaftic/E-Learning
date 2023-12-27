@@ -174,33 +174,55 @@ body {
 }
 
 .who-we-are {
-    background-color: rgb(247, 249, 250);
-    display: flex;
-    flex-direction: row;
-    padding: 0 90px;
-    padding-bottom: 100px;
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 100px;
+  width: min(1100px, 95%);
+  justify-content: center;
+  justify-items: center;
+  margin: 0 auto; 
+  align-items: center;
 }
 
 .who-we-are .container {
-    margin-top: 90px;
-    margin-left: 50px;
-    max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  align-items: center; /* Center items horizontally in column layout */
+  margin-top: 90px;
+  margin-left: 50px;
+  max-width: 70%;
 }
 
 .squares {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    margin: 20px 0;
-    margin-left: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin: 20px 0;
+  margin-left: 10px;
 }
 
 .squares div {
-    background-color: rgb(15, 33, 103);
-    width: 13px;
-    height: 9px;
-    transform: skew(-52deg);
+  background-color: rgb(15, 33, 103);
+  width: 13px;
+  height: 9px;
+  transform: skew(-52deg);
 }
+
+@media (max-width: 1000px) {
+  .who-we-are {
+    flex-direction: column;
+    align-items: center;
+    text-align: center; /* Center the text in the container */
+  }
+
+  .who-we-are .container {
+    margin: 0 auto; /* Center the container horizontally */
+    margin-top: 20px; /* Add margin to separate image and container */
+  }
+}
+
 
 .our-vision {
     display: flex;
@@ -262,4 +284,24 @@ body {
     color: white;
     padding: inherit;
     background-color: inherit;
+}
+@media (max-width: 1000px) {
+  .our-vision {
+    flex-direction: column;
+    column-gap: 0;
+  }
+
+  .container1::after {
+    display: none; /* Hide the vertical line on smaller screens */
+  }
+
+  .container3 {
+    flex-direction: column;
+    margin-top: 15px;
+  }
+
+  .specs-content {
+    flex-direction: column;
+    height: auto;
+  }
 }

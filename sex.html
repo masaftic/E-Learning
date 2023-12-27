@@ -1,0 +1,55 @@
+<!-- Sample HTML Form -->
+<form id="courseForm">
+    <label for="courseTitle">Course Title:</label>
+    <input type="text" id="courseTitle" name="courseTitle" required>
+  
+    <label for="chapterTitle">Chapter Title:</label>
+    <input type="text" id="chapterTitle" name="chapterTitle" required>
+  
+    <label for="lessonTitle">Lesson Title:</label>
+    <input type="text" id="lessonTitle" name="lessonTitle" required>
+  
+    <label for="lessonContent">Lesson Content:</label>
+    <textarea id="lessonContent" name="lessonContent" required></textarea>
+  
+    <button type="button" onclick="addCourse()">Add Course</button>
+  </form>
+  
+  <script>
+    function addCourse() {
+      const courseTitle = document.getElementById('courseTitle').value;
+      const chapterTitle = document.getElementById('chapterTitle').value;
+      const lessonTitle = document.getElementById('lessonTitle').value;
+      const lessonContent = document.getElementById('lessonContent').value;
+  
+      const data = {
+        title: courseTitle,
+        chapters: [{
+          title: chapterTitle,
+          lessons: [{
+            title: lessonTitle,
+            content: lessonContent
+          }]
+        }]
+      };
+  
+      // Send data to the backend using fetch or another AJAX method
+      fetch('/api/courses', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      })
+      .then(response => response.json())
+      .then(data => {
+        console.log('Success:', data);
+        // Handle success, maybe redirect or update UI
+      })
+      .catch((error) => {
+        console.error('Error:', error);
+        // Handle error, show an alert or update UI
+      });
+    }
+  </script>
+  
