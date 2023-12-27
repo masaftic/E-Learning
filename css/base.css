@@ -18,7 +18,8 @@
 
 body {
   font-family: 'Nunito Sans', sans-serif;
-  background: url('../images/wallpaper.jpg') no-repeat;
+  background-color: var(--clr-light-gray);
+  /* background: url('../images/wallpaper.jpg') no-repeat; */
   background-size: contain;
 }
 
