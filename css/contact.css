@@ -1,3 +1,5 @@
+
+
 .contact-us {
     background-color: #ecf0f2;
     padding-top: 100px;
@@ -7,12 +9,10 @@
 .contact-us .container {
     display: flex;
     flex-direction: row;
-    gap: 190px;
+    gap: 2rem;
 }
 
-.container1 {
-    width: 1100px;
-}
+
 .squares {
     display: flex;
     flex-direction: row;
@@ -142,5 +142,12 @@ form .send {
 }
 
 form .send:hover {
-    background-color: rgb(76, 185, 231);;
+    background-color: rgb(76, 185, 231);
+}
+
+@media (max-width: 850px) {
+    .contact-us .container {
+        display: flex;
+        flex-direction: column;
+    }
 }
