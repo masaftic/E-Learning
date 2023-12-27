@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/base.css">
+    <title>Add Course Form</title>
+    <style>
+        html {
+            margin: 0;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: rgb(247, 249, 250);
+            margin: 0;
+            padding: 0;
+        }
+
+        form {
+            background-color: #fff;
+            max-width: 600px;
+            margin: 3rem auto;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input,
+        textarea,
+        button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        button {
+            background-color: rgb(76, 185, 231);
+            color: #fff;
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background-color: rgb(76, 185, 231);
+        }
+
+        h3,
+        h4 {
+            margin: 1rem 0;
+            color: #333;
+        }
+
+        div[id^="chaptersContainer"] {
+            border-top: 1px solid #ccc;
+            padding-top: 16px;
+            margin-top: 16px;
+        }
+
+        div[id^="lessonsContainer"] {
+            border-top: 1px solid #eee;
+            padding-top: 8px;
+            margin-top: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="navbar">
+                <img src="images/logo.png" alt="logo">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="all-courses.html">All Courses</a></li>
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li><a href="Instructors.html">Instructors</a></li>
+                        <li><a href="pricing-faq.html">Pricing & FAQ</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="login.html" class="btn">log in</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <form id="courseForm">
+        <label for="courseTitle">Course Title:</label>
+        <input type="text" id="courseTitle" required>
+
+        <label for="courseImg">Course Image URL:</label>
+        <input type="text" id="courseImg" required>
+
+        <label for="courseDescription">Course Description:</label>
+        <textarea id="courseDescription" rows="4" required></textarea>
+
+        <button type="button" onclick="addChapter()">Add Chapter</button>
+
+        <div id="chaptersContainer"></div>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <script src="js/add-course.js">
+    </script>
+</body>
+
+</html>
